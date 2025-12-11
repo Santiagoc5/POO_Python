@@ -7,32 +7,33 @@ class Vehiculo:
         self.capacidad_pasajeros = capacidad_pasajeros
         self.tipo_combustible = tipo_combustible
 
-    def arranque(self):
-        return "El vehículo ha arrancado."
+    def iniciar_marcha(self):                           
+        return "El sistema de movimiento ha iniciado."
 
-    def apagado(self):
-        return "El vehículo está apagado."
+    def detener_marcha(self):                           
+        return "El sistema de propulsión está detenido."
 
-    def aceleracion_frenado(self):
-        return "Puede acelerar y frenar normalmente."
+    def modificar_velocidad(self):                      
+        return "Puede aumentar y reducir la velocidad de forma habitual."
 
-    def sistema_direccion(self):
-        return "Cuenta con dirección estándar."
+    def mecanismo_direccion(self):                      
+        return "Dispone de un mecanismo de guía estándar."
 
-    def climatizacion(self):
-        return "Sistema de aire acondicionado básico."
+    def regulacion_temperatura(self):                   
+        return "Módulo de gestión térmica de nivel elemental."
 
-    def tipo_seguridad(self):
-        return "Incluye cinturones y airbags estándar."
+    def elementos_proteccion(self):                     
+        return "Incorpora arneses de sujeción y bolsas de aire de serie."
 
-    def luces(self):
-        return "Luces delanteras y traseras operativas."
+    def dispositivos_luminosos(self):                   
+        return "Puntos de luz frontales y posteriores operativos."
 
-    def sistema_ventanas(self):
-        return "Ventanas manuales o eléctricas según el modelo."
+    def operatividad_ventanillas(self):                 
+        return "Paneles transparentes de accionamiento manual o asistido según versión."
 
-    def sistema_espejos(self):
-        return "Espejos ajustables según el modelo."
+    def reglaje_retrovisores(self):                     
+        return "Dispositivos de visión posterior ajustables según la configuración."
 
-    def descripcion(self):
+    def obtener_resumen(self):                         
         return f"Vehículo {self.modelo} color {self.color}, motor {self.motor}."
+
