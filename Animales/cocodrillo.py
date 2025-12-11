@@ -1,14 +1,16 @@
 from animal import Animal
 class Cocodrilo(Animal):
     def __init__(self, nombre, edad, habitat, dieta, tamaño, color,
-                 fuerza_mandibula, acuatico, longitud):
+                 potencia_presion_mordida, entorno_acuoso, dimension_lineal):
         super().__init__(nombre, edad, habitat, dieta, tamaño, color)
-        self.fuerza_mandibula = fuerza_mandibula
-        self.acuatico = acuatico
-        self.longitud = longitud
+        
+        self.potencia_presion_mordida = potencia_presion_mordida
+        self.entorno_acuoso = entorno_acuoso                     
+        self.dimension_lineal = dimension_lineal                 
 
-    def cazar(self):
-        print(f"{self.nombre} espera inmóvil antes de atacar.")
+    def acechar_presa(self):
+        print(f"{self.nombre} permanece inactivo antes de la emboscada.")
 
-    def sumergirse(self):
-        print(f"{self.nombre} se sumerge silenciosamente.")
+    def hundirse(self):
+        print(f"{self.nombre} desciende bajo el agua sin hacer ruido.")
+
