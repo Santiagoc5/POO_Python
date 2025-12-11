@@ -1,14 +1,16 @@
 from animal import Animal
 class PezTropical(Animal):
     def __init__(self, nombre, edad, habitat, dieta, tamaño, color,
-                 salinidad, tipo_aleta, de_arrecife):
+                 concentracion_sales, morfologia_apendice_natatorio, residente_arrecife):
         super().__init__(nombre, edad, habitat, dieta, tamaño, color)
-        self.salinidad = salinidad
-        self.tipo_aleta = tipo_aleta
-        self.de_arrecife = de_arrecife
+        
+        self.concentracion_sales = concentracion_sales             
+        self.morfologia_apendice_natatorio = morfologia_apendice_natatorio 
+        self.residente_arrecife = residente_arrecife          
 
-    def nadar(self):
-        print(f"{self.nombre} nada entre corales suavemente.")
+    def desplazarse_liquido(self):
+        print(f"{self.nombre} se mueve entre la barrera de coral con fluidez.")
 
-    def camuflarse(self):
-        print(f"{self.nombre} cambia su color para mezclarse.")
+    def modificar_tonalidad(self):
+        print(f"{self.nombre} altera su pigmentación para mimetizarse.")
+
