@@ -1,12 +1,12 @@
 from vehiculo import Vehiculo
 
 class CamionetaCarga(Vehiculo):
-    def __init__(self, modelo, color, motor, numero_puertas, capacidad_pasajeros, tipo_combustible, capacidad_carga_kg):
+    def __init__(self, modelo, color, motor, numero_puertas, capacidad_pasajeros, tipo_combustible, aforo_kilogramos_util):
         super().__init__(modelo, color, motor, numero_puertas, capacidad_pasajeros, tipo_combustible)
-        self.capacidad_carga_kg = capacidad_carga_kg
+        self.aforo_kilogramos_util = aforo_kilogramos_util
 
-    def climatizacion(self):
-        return "Climatización básica para cabina de trabajo."
+    def regulacion_temperatura(self):
+        return "Sistema térmico elemental diseñado para ambiente de trabajo."
 
-    def info_extra(self):
-        return f"Capacidad de carga: {self.capacidad_carga_kg} kg"
+    def detalles_adicionales(self):
+        return f"Volumen máximo de transporte: {self.aforo_kilogramos_util} kg"
