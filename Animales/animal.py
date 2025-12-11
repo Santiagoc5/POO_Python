@@ -7,14 +7,14 @@ class Animal:
         self.tamaño = tamaño
         self.color = color
 
-    def moverse(self):
-        print(f"{self.nombre} se está moviendo.")
+    def realizar_desplazamiento(self):
+        print(f"{self.nombre} está realizando un desplazamiento.")
 
-    def comunicarse(self):
-        print(f"{self.nombre} se comunica a su manera.")
+    def emitir_señales(self):
+        print(f"{self.nombre} emite señales vocales.")
 
-    def alimentarse(self):
-        print(f"{self.nombre} está comiendo.")
+    def consumir_nutrientes(self):
+        print(f"{self.nombre} está ingiriendo comida.")
 
-    def descansar(self):
-        print(f"{self.nombre} descansa con tranquilidad.")
+    def entrar_en_reposo(self):
+        print(f"{self.nombre} entra en estado de reposo.")
